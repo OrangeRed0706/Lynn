@@ -36,7 +36,7 @@ Medium的話還的沒什麼想法，他光是匯入後排版就有問題了，�
 
 | |Hexo|Hugo|
 |---|---|---|
-|特色|                                                                    1. Node.js，對大家都很友善 <br>  2. 插件生態非常豐富，可以很簡單去擴展功能 <br> 3. 台灣人寫的 | 1. Go語言寫的，編譯超快。<br>  2.不需要踏入Node.js的可怕依賴環境。
+|特色|1. Node.js，對大家都很友善 <br />  2. 插件生態非常豐富，可以很簡單去擴展功能 <br /> 3. 台灣人寫的 | 1. Go語言寫的，編譯超快。<br />  2.不需要踏入Node.js的可怕依賴環境。
 
 在研究的時候有發現一些.Net的Blog框架，默默的決定之後的Side Project可以寫個.NET的Blog Engine，不過前端苦手阿QQ
 
@@ -45,7 +45,7 @@ Medium的話還的沒什麼想法，他光是匯入後排版就有問題了，�
 
 廢話說完了，接下來步驟希望自己以後不會重新跑一次XD
 
-先安裝Hugo，假設沒有Chocolatey可以先安裝，因為蠻常會使用到的，也有其他的安裝方式
+先安裝Hugo，有很多安裝方式
 ```
 choco install hugo-extended (我選這個)
 scoop install hugo-extended
