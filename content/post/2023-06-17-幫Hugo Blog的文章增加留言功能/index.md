@@ -5,7 +5,7 @@ author: Lynn
 tags: ["Hugo"]
 ---
 
-其實一般的Blog Engine都會有支援這種擴充套件，之前Hexo用的是 [Gitalk](ttps://github.com/gitalk/gitalk)，而Hugo蠻多主題都有支援[giscus](https://github.com/giscus/giscus)，所以就直接介紹giscus了
+其實一般的Blog Engine都會有支援這種擴充套件，之前Hexo用的是 [Gitalk] (ttps://github.com/gitalk/gitalk)，而Hugo蠻多主題都有支援 [giscus](https://github.com/giscus/giscus) ，所以就直接介紹giscus了
 
 <!--more-->
 
@@ -34,17 +34,15 @@ https://giscus.app/zh-CN
 * git repo是要公開的，因為要讓大家都能看到 comment
 * Github 上安裝 https://github.com/apps/giscus
     * 建議只允許他訪問你設定的Repo就好
-    ![](https://hackmd.io/_uploads/SkbB6SjD2.png) 
+    ![](./img/upload_c1dc11505b90f1a13af6f179937663aa.png) 
 * 在Repo裡面打開Discussions的功能 
     * Setting => Features => Discussions打勾，按下Set up discussions
-    ![](https://hackmd.io/_uploads/Sy0ThBoD2.png)
+    ![](/img/upload_d3c35d97711f545a70ea8ea603d0454c.png)
 
-接著可以在網站上輸入你的Repo名稱，往下選擇一些自訂的設定
-![](https://hackmd.io/_uploads/B1kqproD2.png)
-最後取得Repo-id、category-id並更新在config檔就完成囉
-![](https://hackmd.io/_uploads/ryxC6HsD3.png)
+接著可以在網站上輸入你的Repo名稱，往下選擇一些自訂的設定，最後取得Repo-id、category-id並更新在config檔就完成了
+![](/img/upload_89b3ed9f26c3617029f155cd5de67606.png)
 
 測試成功
-![](https://hackmd.io/_uploads/BkIEL8ov2.png)
-![](https://hackmd.io/_uploads/r1IH8UiDn.png)
+![](/img/upload_b3548377dc8901d91922e2a5f00366b0.png)
+![](/img/upload_6b191eb69a0ddf8f5a057ed403c0bf3c.png)
 
