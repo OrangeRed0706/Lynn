@@ -1,5 +1,6 @@
 ---
 title: LeetCode 20. Valid Parentheses (Easy)
+author: Lynn
 date: 2022-02-07 20:41:48
 tags: ["LeetCode"]
 ---

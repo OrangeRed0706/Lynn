@@ -1,5 +1,6 @@
 ---
 title: Observability Notes - 為什麼要寫Log
+author: Lynn
 date: 2022-12-27 00:00:00
 tags: ["Observability"]
 ---

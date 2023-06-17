@@ -1,5 +1,6 @@
 ---
 title: LeetCode 70. Climbing Stairs (Easy)
+author: Lynn
 date: 2022-02-08 22:45:13
 tags: ["LeetCode"]
 ---

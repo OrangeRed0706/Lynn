@@ -1,5 +1,6 @@
 ---
 title: LeetCode 283. Move Zeroes (Easy)
+author: Lynn
 date: 2022-02-15 23:38:17
 tags: ["LeetCode"]
 ---

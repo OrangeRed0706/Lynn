@@ -1,5 +1,6 @@
 ---
 title: LeetCode 771. Jewels and Stones (Easy)
+author: Lynn
 date: 2022-02-12 21:31:07
 tags: ["LeetCode"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: LeetCode 136. Single Number (Easy)
+author: Lynn
 date: 2022-02-09 23:15:05
 tags: ["LeetCode"]
 ---

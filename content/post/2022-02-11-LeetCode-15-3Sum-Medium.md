@@ -1,5 +1,6 @@
 ---
 title: LeetCode 15. 3Sum (Medium)
+author: Lynn
 date: 2022-02-11 20:18:53
 tags: ["LeetCode"]
 ---

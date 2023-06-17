@@ -1,5 +1,6 @@
 ---
 title: LeetCode 1. Two Sum (Easy)
+author: Lynn
 date: 2022-02-06 12:11:12
 tags: ["LeetCode"]
 ---

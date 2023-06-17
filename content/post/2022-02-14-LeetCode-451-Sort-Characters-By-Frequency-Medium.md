@@ -1,5 +1,6 @@
 ---
 title: LeetCode 451. Sort Characters By Frequency (Medium)
+author: Lynn
 date: 2022-02-14 22:30:20
 tags: ["LeetCode"]
 ---
