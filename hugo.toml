@@ -133,10 +133,10 @@ params = ["categories", "tags"]
     style = "dracula"
 
 [params.giscus]
-data_repo="OrangeRed0706/blog-comments"
-data_repo_id="R_kgDOGytWLQ"
+data_repo="OrangeRed0706/Lynn"
+data_repo_id="R_kgDOJwfTCA"
 data_category="announcements"
-data_category_id="DIC_kwDOGytWLc4CXRqX"
+data_category_id="DIC_kwDOJwfTCM4CXSC9"
 data_mapping="pathname"
 data_reactions_enabled="1"
 data_emit_metadata="0"
