@@ -11,7 +11,7 @@ paginate = 5 #frontpage pagination
 hasCJKLanguage = true
 
 [outputs]
-home = ["HTML", "Algolia"] #"HTML","RSS" ,"Algolia"
+home = ["HTML", "RSS", "Algolia"] #"HTML","RSS" ,"Algolia"
 
 [params]
   header_image = "img/header.jpg"
@@ -105,15 +105,15 @@ home = ["HTML", "Algolia"] #"HTML","RSS" ,"Algolia"
   # title = "unsplash"
   # href = "https://unsplash.com"
   
-  # [[params.addtional_menus]]
-  # title =  "ARCHIVE"
-  # href =  "/archive/"
+  [[params.addtional_menus]]
+  title =  "ARCHIVE"
+  href =  "/archive/"
   # [[params.addtional_menus]]
   # title =  "NOTES"
   # href =  "/notes/"
-  # [[params.addtional_menus]]
-  # title =  "ABOUT"
-  # href =  "/about/"
+  [[params.addtional_menus]]
+  title =  "ABOUT"
+  href =  "/about/"
 
 [outputFormats.Algolia]
 baseName = "algolia"

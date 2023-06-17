@@ -2,7 +2,6 @@
 title: LeetCode 70. Climbing Stairs (Easy)
 date: 2022-02-08 22:45:13
 tags: ["LeetCode"]
-categories: ["LeetCode"]
 ---
 You are climbing a staircase. It takes n steps to reach the top.
 

@@ -2,7 +2,6 @@
 title: LeetCode 20. Valid Parentheses (Easy)
 date: 2022-02-07 20:41:48
 tags: ["LeetCode"]
-categories: ["LeetCode"]
 ---
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 

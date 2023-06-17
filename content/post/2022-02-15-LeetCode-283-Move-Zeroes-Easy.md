@@ -2,7 +2,6 @@
 title: LeetCode 283. Move Zeroes (Easy)
 date: 2022-02-15 23:38:17
 tags: ["LeetCode"]
-categories: ["LeetCode"]
 ---
 Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 

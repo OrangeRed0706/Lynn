@@ -2,7 +2,6 @@
 title: LeetCode 136. Single Number (Easy)
 date: 2022-02-09 23:15:05
 tags: ["LeetCode"]
-categories: ["LeetCode"]
 ---
 Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
 
