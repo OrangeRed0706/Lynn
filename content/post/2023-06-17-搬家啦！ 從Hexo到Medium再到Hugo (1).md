@@ -1,5 +1,5 @@
 ---
-title: 搬家啦，從Hexo到Medium再到Hugo (1)
+title: 搬家啦，從Hexo到Medium再到Hugo
 date: 2023-06-17
 author: Lynn
 tags: ["Hugo"]
@@ -33,10 +33,7 @@ Medium的話還的沒什麼想法，他光是匯入後排版就有問題了，�
 
 回到標題，會選擇Hugo單純只是~~星星比較多~~，開玩笑的，因為他是用Go寫的，我想要多看一點其他語言，不然Hexo是台灣人寫的，而且中文資源又多，JS現在也不是什麼困難的東西，香到不行哈哈，雖說Go編譯得比較快，但在Blog根本不用考慮這種東西。
 
-
-| |Hexo|Hugo|
-|---|---|---|
-|特色|1. Node.js，對大家都很友善 <br />  2. 插件生態非常豐富，可以很簡單去擴展功能 <br /> 3. 台灣人寫的 | 1. Go語言寫的，編譯超快。<br />  2.不需要踏入Node.js的可怕依賴環境。
+![](https://hackmd.io/_uploads/rkqpLIjPh.png)
 
 在研究的時候有發現一些.Net的Blog框架，默默的決定之後的Side Project可以寫個.NET的Blog Engine，不過前端苦手阿QQ
 
