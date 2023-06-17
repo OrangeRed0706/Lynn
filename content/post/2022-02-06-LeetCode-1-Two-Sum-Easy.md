@@ -2,8 +2,7 @@
 title: LeetCode 1. Two Sum (Easy)
 date: 2022-02-06 12:11:12
 tags: ["LeetCode"]
-categories:
-  - - LeetCode
+categories: ["LeetCode"]  
 ---
 
 https://leetcode.com/problems/two-sum/ 

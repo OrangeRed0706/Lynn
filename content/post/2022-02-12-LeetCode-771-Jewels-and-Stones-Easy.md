@@ -2,8 +2,7 @@
 title: LeetCode 771. Jewels and Stones (Easy)
 date: 2022-02-12 21:31:07
 tags: ["LeetCode"]
-categories:
-  - - LeetCode
+categories: ["LeetCode"]
 ---
 You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
 
