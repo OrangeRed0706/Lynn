@@ -1,7 +1,5 @@
-# 搬家啦！ 從Hexo到Medium再到Hugo (1)
-
 ---
-title: 搬家啦，從Hexo到Medium再到Hugo
+title: 搬家啦，從Hexo到Medium再到Hugo (1)
 date: 2023-06-17
 author: Lynn
 tags: ["Hugo"]
