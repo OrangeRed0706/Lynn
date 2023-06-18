@@ -9,7 +9,7 @@ tags: ["Hugo"]
 
 <!--more-->
 
-之前Hexo用的是 [Gitalk](ttps://github.com/gitalk/gitalk) ，而Hugo我觀察發現除了Gitalk以外，蠻多主題都有支援 [giscus](https://github.com/giscus/giscus) ，當作學習就來用用看giscus吧
+之前Hexo用的是 [Gitalk](https://github.com/gitalk/gitalk) ，而Hugo我觀察發現除了Gitalk以外，蠻多主題都有支援 [giscus](https://github.com/giscus/giscus) ，當作學習就來用用看giscus吧
 
 ## 新增Gitcus
 
