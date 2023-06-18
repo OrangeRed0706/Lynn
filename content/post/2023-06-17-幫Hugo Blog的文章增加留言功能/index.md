@@ -5,7 +5,9 @@ author: Lynn
 tags: ["Hugo"]
 ---
 
-其實一般的Blog Engine都會有支援這種擴充套件，之前Hexo用的是 [Gitalk](ttps://github.com/gitalk/gitalk) ，而Hugo蠻多主題都有支援 [giscus](https://github.com/giscus/giscus) ，所以就直接介紹giscus了
+一般的Blog Engine多少都會有支援留言評論的擴充套件，不然也太無聊了吧XD
+
+之前Hexo用的是 [Gitalk](ttps://github.com/gitalk/gitalk) ，而Hugo我觀察發現除了Gitalk以外，蠻多主題都有支援 [giscus](https://github.com/giscus/giscus) ，當作學習就來用用看giscus吧
 
 <!--more-->
 
