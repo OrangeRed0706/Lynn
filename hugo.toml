@@ -70,7 +70,7 @@ home = ["HTML", "RSS", "Algolia"] #"HTML","RSS" ,"Algolia"
   [params.social]
   #rss            = true 
   email          = "lynnmaxwell0706@gmail.com"
-  facebook      = "full profile url in facebook"
+  # facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
   #twitter       = "full profile url in twitter"
   linkedin       = "https://www.linkedin.com/in/lynn-yen-15999822a/"
