@@ -37,7 +37,7 @@ rsconnect/
 
 # desktop.ini et al
 *.ini
-.env
+
 # dev folder
 dev/
 
