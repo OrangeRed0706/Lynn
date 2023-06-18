@@ -38,10 +38,13 @@ HUGO_VERSION = 0.113.0
 
 ![](./img/DeploySuccess.png)
 
-使用 https://tools.bunny.net/latency-test 來測試CDN有沒有正常運行，可以看到大部分都是0 ms，有一個區域Fail了想必不是我的問題XD
+使用 https://tools.bunny.net/latency-test 來測試CDN有沒有正常運行，可以看到大部分都是0 ms
 
 ![](./img/Test.png)
 
-接著只要把Repo裡面指定Branch有被更動，cloudflare就會自動去抓並部屬囉！
+接著只Repo裡面指定Branch有被更動，cloudflare就會自動去抓並部屬囉！
+
+為了版控，我有額外設定main不能push，只能依靠發PR的方式才能Merge，可以看到在這階段CloudFlare就先幫你跑了一次測試Build的版本，並讓你可以提前Review而不影響到正式環境
+![Alt text](./img/MergeRequest.png)
 
 ![](./img/ChangeDeploy.png)

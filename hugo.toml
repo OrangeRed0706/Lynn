@@ -31,9 +31,9 @@ home = ["HTML", "RSS", "Algolia"] #"HTML","RSS" ,"Algolia"
 
   # algolia site search
   algolia_search = true
-  algolia_appId = ""
-  algolia_indexName = ""
-  algolia_apiKey = ""
+  algolia_appId = "RCCGPDSLW8"
+  algolia_indexName = "blog_search"
+  algolia_apiKey = "5318d10cbffa027d24609086c3dac838"
 
   # Sidebar settings
   sidebar_about_description = ".NET Developer, Open Source Enthusiast"
