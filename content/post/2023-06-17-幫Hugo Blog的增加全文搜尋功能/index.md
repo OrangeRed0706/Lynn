@@ -21,6 +21,7 @@ tags: ["Hugo"]
 
 有些人會覺得fusejs比較單純，因為他不需要依賴npm去build，造成部屬的麻煩，這等等會講到
 
+
 ## 註冊Algolia的會員
 
 註冊完後會看到預設是沒有Application的，直接先Create一個，方案選免費的就夠了
@@ -59,9 +60,11 @@ ALGOLIA_INDEX_FILE={{ PATH/TO/algolia.json }}
   algolia_indexName = {{ YOUR_INDEX_NAME }}
   algolia_apiKey = {{ YOUR_API_KEY }}
 ```
+
 這樣就大功告成！ 
 
 首先執行hugo，會產生一個public的folder，裡面會有所有build起來的資料，會看到裡面有一個 algolia.json，裡面就是相關的索引資料，接著只要輸入 npm run algolia，就可以把資料推到algolia上了。
+
 ```
 hugo
 npm run algolia
@@ -136,6 +139,8 @@ jobs:
           npm run algolia
 ```
 接著只要branch回main之後，就可以看到觸發這job，並成功執行囉
+
 ![Alt text](./img/github_job_success.png)
+
 
 到這邊會發現CloudFlare的部分也可以直接寫在裡面，這就留著以後整合的時候更新了，畢竟他現在也Run的好好的XD
