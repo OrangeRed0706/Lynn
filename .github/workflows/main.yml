@@ -15,6 +15,13 @@ jobs:
         with:
           submodules: true
 
+      - name: Print current directory after Checkout
+        run: |
+          echo "Current directory is:"
+          pwd
+          echo "Directory content is:"
+          ls -al
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
@@ -32,7 +39,14 @@ jobs:
           extended: true
           
       - name: Build
-        run: hugo -d /usr/bin/public
+        run: hugo
+
+      - name: Print current directory after Hugo build
+        run: |
+          echo "Current directory is:"
+          pwd
+          echo "Directory content is:"
+          ls -al
 
       - name: Run Algolia
         run: |
@@ -42,4 +56,9 @@ jobs:
           ALGOLIA_INDEX_FILE=${{ secrets.ALGOLIA_INDEX_FILE }} \
           npm run algolia
 
-
+      - name: Print current directory after Algolia run
+        run: |
+          echo "Current directory is:"
+          pwd
+          echo "Directory content is:"
+          ls -al
