@@ -42,3 +42,4 @@ rsconnect/
 dev/
 
 public/
+node_modules/
