@@ -12,16 +12,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          submodules: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-
-      - name: Setup Go
-        uses: actions/setup-go@v2
-        with:
-          go-version: '1.20' 
 
       - name: Install Dependencies
         run: |
@@ -32,17 +29,13 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.113.0'
+          extended: true
           
       - name: Build
-        run: hugo
+        run: hugo -d /public
 
       - name: Run Algolia
         run: |
-          echo "ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}"
-          echo "ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}"
-          echo "ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}"
-          echo "ALGOLIA_INDEX_FILE: ${{ secrets.ALGOLIA_INDEX_FILE }}"
-          
           ALGOLIA_APP_ID=${{ secrets.ALGOLIA_APP_ID }} \
           ALGOLIA_ADMIN_KEY=${{ secrets.ALGOLIA_ADMIN_KEY }} \
           ALGOLIA_INDEX_NAME=${{ secrets.ALGOLIA_INDEX_NAME }} \
