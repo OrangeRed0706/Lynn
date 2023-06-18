@@ -55,10 +55,3 @@ jobs:
           ALGOLIA_INDEX_NAME=${{ secrets.ALGOLIA_INDEX_NAME }} \
           ALGOLIA_INDEX_FILE=${{ secrets.ALGOLIA_INDEX_FILE }} \
           npm run algolia
-
-      - name: Print current directory after Algolia run
-        run: |
-          echo "Current directory is:"
-          pwd
-          echo "Directory content is:"
-          ls -al
