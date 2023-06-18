@@ -42,6 +42,9 @@ HUGO_VERSION = 0.113.0
 
 ![](./img/Test.png)
 
-接著只要Repo裡面指定Branch有被更動，cloudflare就會自動去抓並部屬囉！
+接著只Repo裡面指定Branch有被更動，cloudflare就會自動去抓並部屬囉！
+
+為了版控，我有額外設定main不能push，只能依靠發PR的方式才能Merge，可以看到在這階段CloudFlare就先幫你跑了一次測試Build的版本，並讓你可以提前Review而不影響到正式環境
+![Alt text](./img/MergeRequest.png)
 
 ![](./img/ChangeDeploy.png)
