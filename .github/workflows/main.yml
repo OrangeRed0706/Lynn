@@ -1,4 +1,4 @@
-name: Build to Algolia
+name: Build and Deploy
 
 on:
   push:
@@ -32,4 +32,9 @@ jobs:
         run: hugo
 
       - name: Run Algolia
+        env: 
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
+          ALGOLIA_INDEX_FILE: ${{ secrets.ALGOLIA_INDEX_FILE }}
         run: npm run algolia
