@@ -10,10 +10,10 @@ tags: ["Hugo"]
 
 <!--more-->
 
-稍微suvery一下後有幾種在Blog內全文搜尋的方式
-    * [Google Custom Search](https://programmablesearchengine.google.com/about/)
-    * [fusejs.io](https://fusejs.io/)
-    * [Algolia](https://www.algolia.com/)
+suvery一下後有幾種在Blog內全文搜尋的方式
+* [Google Custom Search](https://programmablesearchengine.google.com/about/)
+* [fusejs.io](https://fusejs.io/)
+* [Algolia](https://www.algolia.com/)
 
 因為Clean White Theme這主題已經有支援Algolia，所以就直接來用用看吧！
 
