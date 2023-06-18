@@ -32,7 +32,7 @@ jobs:
           extended: true
           
       - name: Build
-        run: hugo -d /public
+        run: hugo -d /usr/bin/public
 
       - name: Run Algolia
         run: |
