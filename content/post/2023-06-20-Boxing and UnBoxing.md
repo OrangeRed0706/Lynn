@@ -18,6 +18,7 @@ Console.WriteLine($"Hello World {count.ToString()}");
 雖然在程式碼結構上差異不大，但在內部的運作上，這兩者實際上有很大的差別。
 
 下面是一個簡單實際執行的效能測試：
+
 版本 : .NET Core 3.1
 ```
 void Main()
@@ -118,7 +119,9 @@ void Case2Testing(int count)
 ```
 
 為什麼會快這麼多?
+
 其實是C# 10有對字串插補做效能改進
+
 可以用LinqPad等其他工具看到net core 3.0 一開始被編譯出來的版本，是使用String.Format
 ```
 //1
@@ -332,5 +335,6 @@ AMD Ryzen 7 3800X, 1 CPU, 16 logical and 8 physical cores
 
 
 Reference:
+
 https://learn.microsoft.com/zh-tw/dotnet/framework/performance/performance-tips?WT.mc_id=DT-MVP-4015686
 https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/types/boxing-and-unboxing?WT.mc_id=DT-MVP015686
