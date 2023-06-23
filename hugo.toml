@@ -6,7 +6,6 @@ title = 'Lynn Study Notes'
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 googleAnalytics = "G-9BEGRBTV6X"
-ba_track_id  = "5554207084"
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
