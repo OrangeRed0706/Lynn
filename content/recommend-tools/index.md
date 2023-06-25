@@ -41,7 +41,7 @@ ReSharper - \
  **需要付費**，整合了很多功能和智慧提示在裡面，可以大大增加開發效率，但老實說Vistual Studio也越來越進步了
 * https://marketplace.visualstudio.com/items?itemName=SharpDevelopTeam.ILSpy2022
 
-GitHub Copilot
+GitHub Copilot - \
  **需要付費**，會自動解析上下文或註解，提示適合的程式碼出來
 * https://marketplace.visualstudio.com/items?itemName=GitHub.copilotvs
 
@@ -57,6 +57,6 @@ AceJump - \
 讓你想直接跳到當頁指定程式碼的位置可以用快捷鍵的方式跳過去
 * https://plugins.jetbrains.com/plugin/7086-acejump
 
-GitHub Copilot
+GitHub Copilot - \
  **需要付費**，會自動解析上下文或註解，提示適合的程式碼出來
 * https://plugins.jetbrains.com/plugin/7086-acejump
