@@ -1,4 +1,4 @@
-baseURL = 'https://lynnblog.net/'
+# baseURL = 'https://lynnblog.net/'
 languageCode = 'en-us'
 theme = "hugo-theme-cleanwhite"
 title = 'Lynn Study Notes'
