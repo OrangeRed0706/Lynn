@@ -106,14 +106,17 @@ home = ["HTML", "RSS", "Algolia"] #"HTML","RSS" ,"Algolia"
   # href = "https://unsplash.com"
   
   [[params.addtional_menus]]
-  title =  "ARCHIVE"
-  href =  "/archive/"
-  [[params.addtional_menus]]
   title =  "RECOMMEND-TOOLS"
   href =  "/recommend-tools/"
   [[params.addtional_menus]]
+  title =  "Collaborative Note"
+  href =  "/collaborative-note/"
+  [[params.addtional_menus]]
+  title =  "ARCHIVE"
+  href =  "/archive/"  
+  [[params.addtional_menus]]
   title =  "ABOUT"
-  href =  "/about/"
+  href =  "/about/"  
 
 [outputFormats.Algolia]
 baseName = "algolia"
