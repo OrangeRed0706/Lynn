@@ -5,17 +5,17 @@ date: 2023-06-25
 tags: ["Rust"]
 ---
 
-`Rust`是一種偏向系統級的程式語言。主要目的是為了高效能和安全的應用程序而設計，於2010年在Mozilla研究所發表，並於2015年達到穩定版本。\
-詳細內容就看Wiki吧 https://zh.wikipedia.org/wiki/Rust
+Rust是一種偏向系統級的程式語言。主要目的是為了高效能和安全的應用程序而設計，於2010年在Mozilla研究所發表，並於2015年達到穩定版本。\
+詳細內容就看Wiki吧 \
+ https://zh.wikipedia.org/wiki/Rust
 
 對這語言好奇的原因是因為連Window的Kernel都準備用Rust來取代C++了，單論效能Rust在具有額外安全保證的程式碼會比C++慢一些，但假設C++也做了一些手工檢查，兩者的效能其實是相似的。
+<!--more-->
 
 https://www.thurrott.com/windows/windows-11/282995/first-rust-code-shows-up-in-the-windows-11-kernel
 
 如果之後會在Github、GitLab上看到，那不如有空先來熟悉一下，所以就來試試看`Rust` \
 對Rust的所有權概念也是蠻好奇的XD
-
-<!--more-->
 ## 安裝Rust
 在Window上Rust會需要[Microsoft C++ Build Tools](https://visualstudio.microsoft.com/zh-hant/visual-cpp-build-tools/)，假設有安裝`Visual Studio`那其實已經包含在裡面了，不愧是地表最強IDE！！！
 
