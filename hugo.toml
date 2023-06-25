@@ -108,9 +108,9 @@ home = ["HTML", "RSS", "Algolia"] #"HTML","RSS" ,"Algolia"
   [[params.addtional_menus]]
   title =  "RECOMMEND-TOOLS"
   href =  "/recommend-tools/"
-  [[params.addtional_menus]]
-  title =  "Collaborative Note"
-  href =  "/collaborative-note/"
+  # [[params.addtional_menus]]
+  # title =  "Snippet Notes"
+  # href =  "/snippet-notes/"
   [[params.addtional_menus]]
   title =  "ARCHIVE"
   href =  "/archive/"  
