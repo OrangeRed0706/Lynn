@@ -72,11 +72,13 @@ void Main()
 ## Wireshark介紹
 
 平常看這樣傳輸其實很沒有實感XD
+
 所以找到了一個工具`wireshark`，他是一個用C語言寫的開源網路封包抓取工具
 
 GitLab Link: https://gitlab.com/wireshark/wireshark
 
-使用方式也蠻直覺的，一開始選擇要抓取的網路卡，接著就有很直覺的搜尋畫面可以搜尋和監看。
+使用方式也很簡單，一開始選擇要抓取的網路卡，接著就有很直覺的搜尋畫面可以搜尋和監看。
+
 這邊先介紹TCP協議中幾個常見的Flag的意思
 
 * SYN（Synchronize）：在TCP連接的建立過程，用來初始化。
@@ -113,7 +115,9 @@ GitLab Link: https://gitlab.com/wireshark/wireshark
 接下來可以從PSH裡面看到推送的訊息
 ![](./image/detail2.png)
 Data: 48656c6c6f2053657276657221
+
 Data:53657276657220726563656976656420796f7572206d65737361676521
+
 接著讓這16進位的內容轉換，寫了一段C#
 ```
 void Main()
@@ -178,6 +182,8 @@ Write-Host $ascii
 這樣實測下來對TCP的三次握手有更深入的了解，也對資料的安全性更重視
 
 Reference:
+
 https://www.wireshark.org/
 https://learn.microsoft.com/zh-tw/dotnet/fundamentals/networking/sockets/tcp-classes?WT.mc_id=DT-MVP-4015686
+
 https://www.bing.com/search?pglt=43&q=linux+xxd&cvid=57af4bc1ba2a425e90aea869c0084961&aqs=edge..69i57j0l8.2125j0j1&FORM=ANNTA1&PC=U709
