@@ -18,9 +18,11 @@ tags: ["Rust"]
 1. 批次取回資料
 2. 使用Stream的方式
 
-接著就做幾個API來模擬吧
+接著就做幾個API來模擬吧，我打算做兩個API，一個負責資料產生回傳，另外一隻則是提供下載，分別在兩個專案以方便觀察memory的成長量。
 
-前置作業: 
+## 模擬API
+
+### 前置作業: 
 ```
 dotnet new sln -n All
 dotnet new webapi -n data.source.api
@@ -28,7 +30,9 @@ dotnet new webapi -n file.download.api
 dotnet sln All.sln add ./data.source.api/
 dotnet sln All.sln add ./file.download.api
 ```
-datasource.api
+### Example Code 
+#### Datasource.api
+產出五千筆的資料，使用AsyncEnumerable
 ```
     [HttpGet]
     [Route("get/big-data")]
@@ -80,7 +84,8 @@ datasource.api
         }
     }
 ```
-filedownload.api
+#### Filedownload.api
+使用FileStreamResult將API回傳的內容寫入Stream
 ```
    [HttpGet]
     [Route("api/download")]
@@ -107,8 +112,13 @@ filedownload.api
         return fileStreamResult;
     }
 ```
+## 測試結果: 
+可以看到data-source-apimemory雖然從70多MB成長到286MB，但前端下載的檔案實際上已經到8.4G了，相比之下只是很小的開銷，而file-download api從頭到尾只占用了66MB的記憶體，非常的省XD
 
-`data-source`
+data-source api
 ![](./image/data-source.png)
-`file-download`
+file-download api
 ![](./image/file-download.png)
+
+Reference:
+* https://learn.microsoft.com/zh-tw/dotnet/api/microsoft.aspnetcore.mvc.filestreamresult.-ctor?view=aspnetcore-7.0&WT.mc_id=DT-MVP-4015686
