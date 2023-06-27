@@ -23,6 +23,8 @@ tags: [".NET"]
 ## 模擬API
 
 ### 前置作業: 
+
+因為偷懶所以用command，可以忽略
 ```
 dotnet new sln -n All
 dotnet new webapi -n data.source.api
@@ -31,8 +33,9 @@ dotnet sln All.sln add ./data.source.api/
 dotnet sln All.sln add ./file.download.api
 ```
 ### Example Code 
+
 #### Datasource.api
-產出五千筆的資料，使用AsyncEnumerable
+產出五千萬筆的資料，使用AsyncEnumerable
 ```
     [HttpGet]
     [Route("get/big-data")]
