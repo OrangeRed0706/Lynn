@@ -2,7 +2,7 @@
 title: 使用FileStreamResult進行大檔案傳輸
 author: Lynn
 date: 2023-06-27
-tags: ["Rust"]
+tags: [".NET"]
 ---
 
 來還技術債啦！！！
