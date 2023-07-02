@@ -95,9 +95,5 @@ https://rules.sonarsource.com/
 
 假設是一個團隊會定義很多Codeing style等等，就會需要使用連線模式來統一標準，連線模式會需要一台Sonqube Server，你可以使用SonarCloud，也可以選擇自己直接在地端架設，在延伸模組裡面選擇SonarLint => ConnectMode => Bind SonarQube or SonarCloud，接著輸入URL選擇對應的Project就完成了。
 
-
-## Pre Steps
-
-
 Reference:
 * https://docs.sonarqube.org/latest/
