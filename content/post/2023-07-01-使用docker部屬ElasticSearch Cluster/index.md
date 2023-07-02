@@ -1,7 +1,7 @@
 ---
 title: 使用docker部屬ElasticSearch Cluster
 author: Lynn
-date: 2023-07-02
+date: 2023-07-01
 tags: ["ElasticSearch"]
 ---
 
@@ -285,7 +285,7 @@ volumes:
     driver: local
 ```
 
-有一個重點是因為ES有可能會需要創建大量的memory map，所以必須設定`max_map_count`的數量，以讓他正常運行。
+有一個重點是因為ES有可能會需要創建大量的memory map，所以必須設定`max_map_count`的數量，以讓他正常運行。\
 註:這個設定的語法在不同OS裡面是不一樣的
 ```
 sysctl -w vm.max_map_count=262144
