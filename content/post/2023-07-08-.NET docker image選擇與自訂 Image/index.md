@@ -69,10 +69,44 @@ base => build => publish 在還沒有容器化的時候就已經存在了，最�
 
 ## 自定義Dotnet Image
 
-接著如果要整合CI/CD流程，以CI來說基本的`dotnet build`、`dotnet restore`、`dotnet test`是必要的，所以也不想多想，就是安裝dotnet sdk
+接著如果要整合CI/CD流程，以CI來說基本的`dotnet build`、`dotnet restore`、`dotnet test`是必要的，所以也不想多想，就是安裝dotnet sdk，把Image拆開可以做很多事，例如你有些習慣的資源或Script會需要先執行等等，都可以經過一層包裝。
 
+```
+ARG REPO_NAME=mcr.microsoft.com/dotnet/sdk
+ARG PROJECT_NAME=proj
 
+FROM ${REPO_NAME}:latest AS build
 
+WORKDIR /app
+
+COPY . .
+RUN dotnet restore ${PROJECT_NAME}
+RUN dotnet build ${PROJECT_NAME}
+RUN dotnet test ${PROJECT_NAME}
+
+# docker build --build-arg PROJECT_NAME={your_custom_project_name} -t {tag_name} .
+```
+.NET CLI指令雖然會自動抓取project name，但是假設專案很多，或是一個sln裡面包裝很多project，就會需要其他指令來協助，這個Dockerfile寫的還有很多地方可以調整，但一般情況下也算夠用了。
+
+假設今天是要build runtime image的，則可以只拉runtime下來。
+```
+FROM mcr.microsoft.com/dotnet/runtime:latest AS runtime
+WORKDIR /app
+ARG PROJECT_NAME
+ENV dll="/app/${PROJECT_NAME}.dll"
+
+COPY --from=build /app/out ./
+
+ENV PORT=12345
+EXPOSE $PORT
+
+# Define the urls environment variable
+ENV URLS=http://*:$PORT
+
+ENTRYPOINT dotnet ${dll} --urls ${URLS}
+
+# docker build --build-arg PROJECT_NAME={your_custom_project_name} -t {tag_name} .
+```
 Reference:
 * https://andrewlock.net/exploring-the-net-core-mcr-docker-files-runtime-vs-aspnet-vs-sdk/
 * https://www.turnkeylinux.org/blog/alpine-vs-debian#:~:text=Debian%20is%20superior%20compared%20to%20Alpine%20Linux%20with,present%20and%20future%20security%20of%20its%20build%20infrastructure
