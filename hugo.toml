@@ -128,12 +128,20 @@ notAlternative = true
 vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
 params = ["categories", "tags"] 
 
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[services]
+  [services.googleAnalytics]
+    ID = "G-9BEGRBTV6X"
+
 [markup]
   [markup.tableOfContents]
     endLevel = 2
     startLevel = 1
   [markup.highlight]
     style = "dracula"
+  [markup.goldmark.renderer]
+    unsafe = true
 
 [params.giscus]
 data_repo="OrangeRed0706/Lynn"
